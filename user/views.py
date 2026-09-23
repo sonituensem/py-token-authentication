@@ -70,3 +70,4 @@ class ManageUserView(APIView):
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
         return Response(UserSerializer(user).data)
+

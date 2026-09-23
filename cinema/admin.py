@@ -18,3 +18,4 @@ class NoDeleteAdmin(admin.ModelAdmin):
 
 for model in (CinemaHall, Genre, Actor, Movie, MovieSession, Order, Ticket):
     admin.site.register(model, NoDeleteAdmin)
+
